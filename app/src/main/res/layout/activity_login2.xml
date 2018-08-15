@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/tv_number_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="3"
+            android:text="用户名(手机号码)：" />
+
+        <EditText
+            android:id="@+id/edt_phonenumber"
+            android:layout_width="870dp"
+            android:layout_height="wrap_content"
+            android:hint="只允许输入数字 11位"
+            android:layout_weight="7"
+            android:ems="10"
+            android:maxLength="11"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:digits="0123456789"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/tv_pass_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="密码："
+            android:layout_weight="3"
+            />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="14"
+            android:textSize="20sp"
+            android:inputType="textVisiblePassword"
+            android:layout_weight="7"
+            android:hint="只允许输入数字和英文字母大于 6位  "
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/tv_nick_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="昵称："
+            android:layout_weight="3"
+            />
+
+        <EditText
+            android:id="@+id/edt_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="10"
+            android:textSize="20sp"
+            android:layout_weight="7"
+            android:hint="  "
+            android:inputType="textPersonName"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="性别："
+            />
+        <Switch
+            android:id="@+id/switch_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="3"
+            android:textOff="男"
+            android:textOn="女"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="年龄："
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <SeekBar
+                android:id="@+id/seekBar_age"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:max="44"
+                android:progress="2"
+                android:secondaryProgress="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="60"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/tv_youjian_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="邮箱："
+            android:layout_weight="3"
+            />
+
+        <EditText
+            android:id="@+id/edt_youjian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="20"
+            android:textSize="15sp"
+            android:layout_weight="7"
+            android:hint=" 数字和英文字母和@.（区分大小写） "
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/btn_register_reg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="注册" />
+    </LinearLayout>
+
+</LinearLayout>
